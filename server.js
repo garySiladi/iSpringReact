@@ -13,8 +13,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 const port = 16010;
 
-app.listen(port);
-console.log('Listening at: ' + port);
+// app.listen(port);
+// console.log('Listening at: ' + port);
+
+app.listen();
 
 app.post('/', function(req, res){
     console.log('---QUIZ POST---');
