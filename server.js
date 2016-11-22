@@ -61,7 +61,7 @@ function createData(data) {
   quiz.percentage = data.sp/(data.tp/100);
   quiz.datemilli = dP.getTime();
   quiz.grade = checkGrade(quiz.percentage);
-  quiz.date = dP.getDate() + '/' + dP.getMonth() + '/' + dP.getFullYear();
+  quiz.date = dP.getDate() + '/' + (dP.getMonth()+1) + '/' + dP.getFullYear();
   quiz.desc = XMLMapping.load(data.dr);
   return quiz;
 }
