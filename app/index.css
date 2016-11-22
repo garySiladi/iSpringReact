@@ -37,6 +37,10 @@
   margin-bottom: 0;
 }
 
+.react-bs-table-search-form {
+  margin: 1em;
+}
+
 .loading {
   font-size: 3em;
   position: absolute;

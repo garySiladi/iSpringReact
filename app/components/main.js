@@ -53,7 +53,7 @@ class Main extends React.Component {
     let content = null;
     if (this.state.data) {
       content = (
-        <BootstrapTable exportCSV data={this.state.data} options={this.options} striped={true} hover={true}>
+        <BootstrapTable exportCSV search data={this.state.data} options={this.options} striped={true} hover={true}>
           <TableHeaderColumn dataField="id" isKey={true} hidden>ID</TableHeaderColumn>
           <TableHeaderColumn dataField="datemilli" dataSort={true} hidden>datemilli</TableHeaderColumn>
           <TableHeaderColumn dataField="name" width="150" dataSort={true}>Name</TableHeaderColumn>
