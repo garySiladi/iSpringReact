@@ -1,0 +1,57 @@
+.jumbotron {
+  padding: 1em;
+  margin-bottom: 0;
+}
+
+.list-group-item-text p {
+  margin: 1em 0 1em;
+}
+
+.resultCard {
+  padding: 2em;
+  margin: 1em;
+  border: 1px solid black;
+}
+
+.hidden-print {
+  margin: 1em !important;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table>thead>tr>th {
+  vertical-align: top;
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+}
+
+.table>thead:first-child>tr:first-child>th {
+  word-break: break-all;
+}
+
+.progress {
+  margin-bottom: 0;
+}
+
+.loading {
+  font-size: 3em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  padding: 1em;
+  text-align: center;
+  line-height: 3em;
+  color: white;
+  background-color: #337AB7;
+  border-radius: 3px;
+  transition: 1s;
+}

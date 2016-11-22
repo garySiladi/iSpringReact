@@ -1,0 +1,5 @@
+node_modules
+/build
+quizdata.json
+/results
+questionTypes.js
