@@ -52,7 +52,8 @@ function createData(data) {
   quiz.name = data.USER_NAME;
   quiz.email = data.USER_EMAIL;
   quiz.time = toHHMMSS(data.ut);
-  quiz.class = data.Class;
+  if (data.Class) quiz.class = data.Class;
+  if (data.CLASS) quiz.class = data.CLASS;
   quiz.maxscore = data.tp;
   quiz.passingscore = data.ps;
   quiz.title = data.qt;
