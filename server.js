@@ -18,6 +18,12 @@ console.log('Listening at: ' + port);
 
 // app.listen();
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.post('/', function(req, res){
     console.log('---QUIZ POST---');
     const quiz = createData(req.body);
