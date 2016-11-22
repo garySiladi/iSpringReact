@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 const fs = require('fs');
 const app = express();
@@ -12,7 +14,7 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 port = 16010;
 
 app.listen(port);
-console.log('Listening at http://localhost:' + port);
+console.log('Listening at: ' + port);
 
 app.post('/', function(req, res){
     console.log('---QUIZ POST---');

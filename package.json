@@ -5,8 +5,8 @@
   "main": "quiz.js",
   "scripts": {
     "build": "webpack --progress --colors",
-    "start": "node server.js",
-    "serve": "npm-run-all build start",
+    "start": "npm-run-all build start",
+    "serve": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gary Siladi",
