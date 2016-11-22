@@ -35,10 +35,26 @@
 
 .progress {
   margin-bottom: 0;
+  min-width: 150px;
 }
 
 .react-bs-table-search-form {
   margin: 1em;
+}
+
+.classicStyle {
+  width: 100px;
+  word-break: break-word;
+}
+
+.lowStyle {
+  width: 100px;
+  word-break: break-word;
+}
+
+.lowestStyle {
+  width: 50px;
+  word-break: break-word;
 }
 
 .loading {

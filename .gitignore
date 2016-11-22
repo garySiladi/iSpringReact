@@ -1,4 +1,5 @@
 node_modules
 /build
+/results
 quizdata.json
 questionTypes.js

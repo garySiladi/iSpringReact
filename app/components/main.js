@@ -56,16 +56,16 @@ class Main extends React.Component {
         <BootstrapTable exportCSV search data={this.state.data} options={this.options} striped={true} hover={true}>
           <TableHeaderColumn dataField="id" isKey={true} hidden>ID</TableHeaderColumn>
           <TableHeaderColumn dataField="datemilli" dataSort={true} hidden>datemilli</TableHeaderColumn>
-          <TableHeaderColumn dataField="name" dataSort={true}>Name</TableHeaderColumn>
-          <TableHeaderColumn dataField="email" dataSort={true}>Email</TableHeaderColumn>
-          <TableHeaderColumn dataField="class" dataSort={true}>Class</TableHeaderColumn>
-          <TableHeaderColumn dataField="title" dataSort={true}>Title</TableHeaderColumn>
-          <TableHeaderColumn dataField="date" dataSort={true}>Date</TableHeaderColumn>
-          <TableHeaderColumn dataField="grade" dataSort={true} dataAlign='center'>Mark</TableHeaderColumn>
-          <TableHeaderColumn dataField="percentage" dataFormat={this.percFormatter} dataSort={true}>%</TableHeaderColumn>
-          <TableHeaderColumn dataField="score" dataSort={true} dataAlign='center'>Score</TableHeaderColumn>
-          <TableHeaderColumn dataField="maxscore" dataSort={true} dataAlign='center'>Max</TableHeaderColumn>
-          <TableHeaderColumn dataField="time" dataSort={true}>Time</TableHeaderColumn>
+          <TableHeaderColumn dataField="name" columnClassName='classicStyle' dataSort={true}>Name</TableHeaderColumn>
+          <TableHeaderColumn dataField="email" columnClassName='classicStyle' dataSort={true}>Email</TableHeaderColumn>
+          <TableHeaderColumn dataField="class" columnClassName='classicStyle' dataSort={true}>Class</TableHeaderColumn>
+          <TableHeaderColumn dataField="title" columnClassName='classicStyle' dataSort={true}>Title</TableHeaderColumn>
+          <TableHeaderColumn dataField="date" columnClassName='lowStyle' dataSort={true}>Date</TableHeaderColumn>
+          <TableHeaderColumn dataField="grade" columnClassName='lowestStyle' dataSort={true} dataAlign='center'>Mark</TableHeaderColumn>
+          <TableHeaderColumn dataField="percentage" columnClassName='lowStyle' dataFormat={this.percFormatter} dataSort={true}>%</TableHeaderColumn>
+          <TableHeaderColumn dataField="score" columnClassName='lowestStyle' dataSort={true} dataAlign='center'>Score</TableHeaderColumn>
+          <TableHeaderColumn dataField="maxscore" columnClassName='lowestStyle' dataSort={true} dataAlign='center'>Max</TableHeaderColumn>
+          <TableHeaderColumn dataField="time" columnClassName='lowStyle' dataSort={true}>Time</TableHeaderColumn>
         </BootstrapTable>
       );
     }
