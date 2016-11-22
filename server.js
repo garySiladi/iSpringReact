@@ -11,7 +11,7 @@ const morgan = require('morgan');
 const results = require('./api/results.js');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
-port = 16010;
+const port = 16010;
 
 app.listen(port);
 console.log('Listening at: ' + port);

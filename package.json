@@ -5,7 +5,7 @@
   "main": "quiz.js",
   "scripts": {
     "build": "webpack --progress --colors",
-    "start": "npm-run-all build start",
+    "start": "npm-run-all build serve",
     "serve": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
