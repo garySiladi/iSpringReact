@@ -60,12 +60,12 @@ class Main extends React.Component {
           <TableHeaderColumn dataField="email" width="150" dataSort={true}>Email</TableHeaderColumn>
           <TableHeaderColumn dataField="class" width="150" dataSort={true}>Class</TableHeaderColumn>
           <TableHeaderColumn dataField="title" width="150" dataSort={true}>Title</TableHeaderColumn>
-          <TableHeaderColumn dataField="date" width="150" dataSort={true}>Date</TableHeaderColumn>
+          <TableHeaderColumn dataField="date" width="100" dataSort={true}>Date</TableHeaderColumn>
           <TableHeaderColumn dataField="grade" width="50" dataSort={true} dataAlign='center'>Mark</TableHeaderColumn>
           <TableHeaderColumn dataField="percentage" width="150" dataFormat={this.percFormatter} dataSort={true}>%</TableHeaderColumn>
           <TableHeaderColumn dataField="score" width="50" dataSort={true} dataAlign='center'>Score</TableHeaderColumn>
           <TableHeaderColumn dataField="maxscore" width="50" dataSort={true} dataAlign='center'>Max</TableHeaderColumn>
-          <TableHeaderColumn dataField="time" width="150" dataSort={true}>Time</TableHeaderColumn>
+          <TableHeaderColumn dataField="time" width="100" dataSort={true}>Time</TableHeaderColumn>
         </BootstrapTable>
       );
     }
