@@ -41,8 +41,10 @@ app.get('/results', function(req, res){
   let quizes = [];
   const items = fs.readdirSync('./results');
   for (var i=0; i<items.length; i++) {
-    let file = fs.readFileSync(path.join('./results', items[i]));
-    quizes.push(JSON.parse(file));
+    if (items[i] === /\*json/) {
+      let file = fs.readFileSync(path.join('./results', items[i]));
+      quizes.push(JSON.parse(file));
+    }
   }
   res.send(quizes);
 });
